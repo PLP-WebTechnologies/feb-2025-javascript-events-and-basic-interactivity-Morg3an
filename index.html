@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Handling & Interactive Elements</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>🎯 JavaScript Event Handling & Interactive Elements Assignment</h1>
+
+    <!-- Event Handling Section -->
+    <section>
+        <h2>Event Handling 🎈</h2>
+
+        <!-- Button Click Event -->
+        <button id="myButton">Click Me!</button>
+
+        <!-- Hover Effects -->
+        <div id="hoverDiv" style="width: 200px; height: 50px; background-color: lightgray; text-align: center;">
+            Hover Over Me!
+        </div>
+
+        <!-- Keypress Detection -->
+        <div>
+            <h3>Press any key and check the console!</h3>
+        </div>
+
+        <!-- Bonus: Long Press or Double Click -->
+        <p>Try double-clicking the button or holding it for 1 second for a special action!</p>
+    </section>
+
+    <!-- Interactive Elements Section -->
+    <section>
+        <h2>Interactive Elements</h2>
+
+        <!-- Button that changes text or color -->
+        <button id="changeTextButton">Click to Change Text & Color</button>
+
+        <!-- Image Gallery -->
+        <div id="gallery">
+            <img src="https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="horizon-1" class="gallery-image" style="display: block;" />
+            <img src="https://images.pexels.com/photos/388415/pexels-photo-388415.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="horizon-2" class="gallery-image" style="display: none;" />
+            <img src="https://images.pexels.com/photos/52531/way-clouds-seat-belts-direction-52531.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="horizon-3" class="gallery-image" style="display: none;" />
+        </div>
+
+        <!-- Accordion-style Content -->
+        <div class="tabs">
+            <button class="tab-button" onclick="openTab('tab1')">Tab 1</button>
+            <button class="tab-button" onclick="openTab('tab2')">Tab 2</button>
+            <button class="tab-button" onclick="openTab('tab3')">Tab 3</button>
+        </div>
+
+        <div id="tab1" class="tab-content">
+            <p>Tab 1 should be clicked</p>
+        </div>
+        <div id="tab2" class="tab-content">
+            <p>Maybe you should click Tab 2</p>
+        </div>
+        <div id="tab3" class="tab-content">
+            <p>Definitely don't click Tab 3</p>
+        </div>
+    </section>
+
+    <!-- Form Validation Section -->
+    <section>
+        <h2>Form Validation</h2>
+        <form id="myForm">
+            <label for="myInput">Name:</label>
+            <input type="text" id="myInput" placeholder="Enter your name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email" required>
+            <br>
+
+            <label for="password">Password (min 8 characters):</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+            <span id="passwordFeedback"></span>
+            <br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
